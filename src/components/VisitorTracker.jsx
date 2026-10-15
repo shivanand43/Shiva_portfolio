@@ -68,7 +68,8 @@ function getBrowserCoords() {
 /** Step 2 — Reverse geocode GPS coords → full address via OpenStreetMap Nominatim (free). */
 async function reverseGeocode(lat, lon) {
   try {
-    const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}&addressdetails=1&email=aniljiragyale07@gmail.com`;
+
+const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}&addressdetails=1&email=shivanandpatil55550@gmail.com`;
     const res = await fetch(url, { headers: { 'Accept-Language': 'en' } });
     if (!res.ok) return null;
     const d = await res.json();
@@ -248,7 +249,7 @@ async function buildLocationString() {
       email: 'visitor-tracker@jiragyale.com',
       subject: `🔔 ${visitorName} visited your profile — ${new Date().toLocaleDateString('en-IN')}`,
       message:
-        `Hello Anil,\n\n` +
+        `Hello Shivanand,\n\n` +
         `👋 ${visitorName} visited your portfolio!\n\n` +
         `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
         `🕐 Time    : ${new Date().toLocaleString('en-IN')}\n` +
@@ -301,8 +302,8 @@ async function buildLocationString() {
         <div className="vt-body">
           <p className="vt-greeting">Hi there!</p>
           <p className="vt-desc">
-            You're visiting <strong>Anil's Portfolio</strong>.<br />
-            Mind sharing your name so Anil knows who stopped by?
+            You're visiting <strong>SHIVA's Portfolio</strong>.<br />
+            Mind sharing your name so Shiva knows who stopped by?
           </p>
 
           <div className="vt-input-wrap">

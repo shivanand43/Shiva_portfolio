@@ -5,8 +5,7 @@ import ProjectCard from '../components/ProjectCard'
 import SkillsShowcase from '../components/SkillsShowcase'
 import PortfolioRating from '../components/PortfolioRating'
 import { useSiteContent } from '../context/SiteContentContext'
-import anilImg from '../assets/anil image professional.jpeg'
-
+import ShivaImage from '../../assets/ShivanandImage.png'
 const DEFAULT_SERVICES = [
   {
     icon: '🤖',
@@ -100,24 +99,27 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-status rv">
             <span className="blink"></span>
-            {HOME.heroStatus || 'AI Engineer at Ecolab'}
+            {HOME.heroStatus || 'Full Stack Engineer'}
           </div>
 
           <h1 className="hero-name hero-name-full rv d1">
-            {CONTACT.name.replace(/\s+Jiragyale$/i, '')}{' '}
-            <em>Jiragyale</em>
+            {CONTACT.name.replace(/\s+Patil$/i, '')}{' '}
+            <em>Patil</em>
           </h1>
 
           <p className="hero-tagline rv d2">
             {CONTACT.tagline}
           </p>
 
-          <p className="hero-desc rv d2">
-            {SUMMARY.split('Delivered')[0].trim()}
-            {' '}Delivered <strong>3+ production platforms</strong> for <strong>100+ users</strong> at{' '}
-            <strong>Ecolab</strong>, <strong>Rokkun Systems</strong>, and <strong>GSK GCC</strong> — improving query accuracy by{' '}
-            <strong>30%</strong> and reducing manual effort by <strong>~40%</strong>.
-          </p>
+         
+<p className="hero-desc rv d2">
+  I’m a Full-Stack Developer specializing in <strong>React.js</strong>,{" "}
+  <strong>Next.js</strong>, <strong>Angular</strong>, and{" "}
+  <strong>Node.js</strong>. I’ve built responsive web applications,
+  cross-platform mobile apps, and healthcare management interfaces,
+  integrating REST APIs, authentication, and AI-powered features.
+</p>
+
 
           <div className="hero-actions rv d3">
             <Link to="/about" className="btn-grd">About ✦</Link>
@@ -137,7 +139,7 @@ export default function Home() {
           <div className="photo-container">
             <div className="photo-ring"></div>
             <div className="photo-glow"></div>
-            <img src={anilImg} alt="Anil Jiragyale" className="photo-img" />
+            <img src={ShivaImage} alt="Shivanand Balagond Patil" className="photo-img" />
             <div className="photo-card">
               <div className="pc-big">{HOME.photoCard1?.big || 'AI Engineer 🚀'}</div>
               <div className="pc-sm">{HOME.photoCard1?.sm || 'Ecolab · Rokkun · GSK · Bangalore'}</div>

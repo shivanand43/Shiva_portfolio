@@ -7,7 +7,7 @@ import {
   CERTIFICATIONS,
 } from './profile'
 import { PROJECTS, PROJECT_CATEGORIES } from './projects'
-import defaultResumeUrl from '../assets/Anil_Jiragyale_Resume_ATS.pdf'
+import defaultResumeUrl from '../assets/ShivanandPatil-Resume.pdf'
 
 const HOME_SERVICES = [
   {
@@ -82,7 +82,7 @@ export function getDefaultSiteContent() {
     contact: { ...CONTACT, emailjs: { ...CONTACT.emailjs } },
     summary: SUMMARY,
     resume: {
-      fileName: 'Anil_Jiragyale_Resume_ATS.pdf',
+      fileName: 'ShivanandPatil-Resume.pdf',
       dataUrl: null,
       bundledUrl: defaultResumeUrl,
     },
@@ -100,7 +100,7 @@ export function getDefaultSiteContent() {
     projects: serializeProjects(PROJECTS),
     projectCategories: [...PROJECT_CATEGORIES],
     home: {
-      heroStatus: 'AI Engineer at Ecolab',
+      heroStatus: 'Full Stack Engineer',
       photoCard1: { big: 'AI Engineer 🚀', sm: 'Ecolab · Rokkun · GSK · Bangalore' },
       photoCard2: { big: 'LLM & RAG ✦', sm: '100+ Enterprise Users' },
       metrics: [
@@ -121,19 +121,21 @@ export function getDefaultSiteContent() {
       ctaText:
         'AI Engineer at Ecolab — open to collaborations on AI platforms, LLM systems, and full stack products.',
     },
-    about: {
-      extraParagraphs: [
-        'I build production AI platforms with LangChain, LangGraph, Milvus, FastAPI, React.js, and Next.js — from RAG chatbots and semantic search to enterprise clinical data systems at GSK GCC and market intelligence tools at Rokkun Systems.',
-        'Open to full-time roles in AI engineering, full stack development, and product-driven teams. I focus on reliable systems, clear APIs, and measurable impact.',
-      ],
-      tags: [
-        '🤖 AI / LLM / RAG',
-        '🛠️ Full Stack',
-        '☁️ Azure & AWS',
-        '📊 Power BI & Data',
-        '🔧 FastAPI & React',
-      ],
-    },
+  
+about: {
+  extraParagraphs: [
+    'I build responsive web applications and cross-platform mobile apps using React.js, Next.js, Angular, TypeScript, React Native, and Ionic. My experience includes healthcare management platforms, real estate applications, REST API integration, JWT authentication, interactive dashboards, and AWS S3 integrations.',
+    'I am interested in building reliable, user-focused products and exploring AI-powered features using Google Gemini. I enjoy solving practical development challenges, creating reusable UI components, and improving application performance across web and mobile platforms.'
+  ],
+  tags: [
+    '⚛️ React, Next.js & Angular',
+    '🛠️ Full-Stack Development',
+    '📱 React Native & Ionic',
+    '🔗 REST APIs & JWT',
+    '✨ AI & Gemini Integration'
+  ],
+},
+
   }
 }
 
@@ -143,7 +145,7 @@ export function getResumeDownloadUrl(content) {
 }
 
 export function getResumeFileName(content) {
-  return content?.resume?.fileName || 'Anil_Jiragyale_Resume_ATS.pdf'
+  return content?.resume?.fileName || 'Shivanand_Patil_Resume_ATS.pdf'
 }
 
 export function getFeaturedProjects(content) {

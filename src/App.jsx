@@ -26,7 +26,7 @@ function App() {
     <SiteContentProvider>
     <BrowserRouter>
       <ScrollToTop />
-      <VisitorTracker />
+      {/* <VisitorTracker /> */}
       <Routes>
         <Route path="/admin" element={<Admin />} />
         <Route path="/*" element={

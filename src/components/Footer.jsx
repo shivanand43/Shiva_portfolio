@@ -21,7 +21,9 @@ export default function Footer() {
       <div className="footer-inner">
         <div>
           <div className="footer-brand footer-brand-full">{CONTACT.name}</div>
-          <div className="footer-text">AI Engineer · Ecolab · LLM &amp; RAG Systems · Bangalore, India</div>
+<div className="footer-text">
+  Full-Stack Developer · Relvix · Web & Mobile Applications · Bangalore, India
+</div>
           <div className="footer-text footer-copy" style={{ marginTop: '4px' }}>
             © {year} {CONTACT.name} — Open to Opportunities
           </div>

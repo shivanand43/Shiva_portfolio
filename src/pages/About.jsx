@@ -1,6 +1,6 @@
 import PageBack from '../components/PageBack'
 import useScrollReveal from '../hooks/useScrollReveal'
-import anilImg from '../assets/anil image professional.jpeg'
+import ShivaImage from '../../assets/ShivanandImage.png'
 import { useSiteContent } from '../context/SiteContentContext'
 
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
 
           <div className="about-grid">
             <div className="about-photo rv">
-              <img src={anilImg} alt="Anil Jiragyale" />
+              <img src={ShivaImage} alt="Shivanand Patil" />
             </div>
             <div>
               <p className="about-p rv">{SUMMARY}</p>
@@ -46,7 +46,7 @@ export default function About() {
         <div className="container" id="skills" style={{ paddingTop: '5rem' }}>
           <div className="eyebrow rv">Technical Arsenal</div>
           <h2 className="sec-title rv">My <span>Skills</span></h2>
-          <p className="sec-sub rv">Skills aligned with my resume — languages, AI/ML, full stack, cloud, and data.</p>
+          <p className="sec-sub rv">Skills aligned with my resume </p>
 
           <div className="skills-grid">
             {SKILL_CATEGORIES.map((cat, i) => (

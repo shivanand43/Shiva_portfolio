@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
-      <NavLink to="/" className="nav-brand">AJ.</NavLink>
+      <NavLink to="/" className="nav-brand">SP.</NavLink>
 
       <button className="nav-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`}></i>
