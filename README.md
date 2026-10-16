@@ -1,4 +1,4 @@
-# 🚀 Anil Jiragyale's Multi-Page Portfolio
+# 🚀 Shivanand Patil Multi-Page Portfolio
 
 A beautiful, modern, and fully functional multi-page portfolio website with working email functionality.
 
